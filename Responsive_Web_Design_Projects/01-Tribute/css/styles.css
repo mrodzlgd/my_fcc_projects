@@ -1,0 +1,242 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #191700;
+}
+
+header {
+  background-color: #FFCC00;
+}
+
+
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+ul {
+  text-align: left;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+#title {
+  font-family: 'Lobster', cursive;
+}
+
+#img-div {
+  padding: 0 0 20px;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+}
+
+#tribute-info {
+  padding: 0 60px;
+  font-size: .875rem
+}
+
+#video {
+  align-items: center;
+}
+
+#ted-video {
+  width: 560px;
+  height: 315px;
+}
+
+#timeline {
+  font-size: .875rem;
+  padding: 10px 60px;
+  background-color: #FFCC00;
+}
+
+#fav-quotes {
+  background-color: #FFCC00;
+}
+
+/**css settings for quotes slider used tutorial
+ https://www.youtube.com/watch?reload=9&app=desktop&v=B28IaoWn28w as a reference**/
+.quotes, #quotes-list {
+  height: 200px;
+  margin: auto;
+  font-style: italic;
+}
+
+.quotes {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.quotes li {
+  display: inline-block;
+  height: 200px;
+  float: left;
+  position: relative;
+  width: 600px;
+}
+
+.quotes #quotes-list {
+  position: absolute;
+  width: 9000px;
+  list-style: none;
+  margin-left: -50px;
+  transition: left 20s linear;
+  -moz-transition: left 20s linear;
+  -webkit-transition: left 20s linear;
+  animation: slide-animation 40s infinite;
+}
+
+.quotes-container {
+  margin: auto;
+  padding: 0;
+  width: 600px;
+  position: absolute;
+  top: 50px;
+}
+
+.quotes-container p {
+  width: 600px;
+  padding: 0 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.quotes ul:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide-animation {
+  20% {
+    left: 0
+  }
+
+  25% {
+    left: -600px
+  }
+
+  45% {
+    left: -600px
+  }
+
+  50% {
+    left: -1200px
+  }
+
+  70% {
+    left: -1200px
+  }
+
+  75% {
+    left: -1800px
+  }
+
+  98% {
+    left: -1800px
+  }
+
+  100% {
+    left: 0
+  }
+}
+
+@media(max-width: 460px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: .9375rem;
+  }
+
+  h3 {
+    font-size: 0.625rem;
+  }
+
+  figcaption {
+    font-size: 0.625rem;
+  }
+
+  #timeline {
+    font-size: .75rem;
+    padding: 5px 30px;
+  }
+
+  #tribute-info {
+    padding: 0 30px;
+    font-size: .75rem
+  }
+
+  #ted-video {
+    width: 280px;
+    height: 158px;
+  }
+  .quotes {
+    width: 300px;
+
+  }
+  .quotes-container {
+    width: 300px
+  }
+
+  .quotes-container p {
+    font-size: .75rem;
+    width: 300px;
+  }
+
+  .quotes li {
+    width: 300px;
+  }
+
+  @keyframes slide-animation {
+    20% {
+      left: 0
+    }
+
+    25% {
+      left: -300px
+    }
+
+    45% {
+      left: -300px
+    }
+
+    50% {
+      left: -600px
+    }
+
+    70% {
+      left: -600px
+    }
+
+    75% {
+      left: -1200px
+    }
+
+    98% {
+      left: -1200px
+    }
+
+    100% {
+      left: 0
+    }
+  }
+}

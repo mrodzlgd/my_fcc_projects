@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--declaring the document type-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main id="main">
+    <!--start header section-->
+    <div class="container">
+      <header class="header">
+        <h1 id="title">COVID-19 Community Opinion Survey</h1>
+        <p id="description">
+          Thank you for helping us to understand how our community feels about
+          the current situation to ensure everyone feels safe and respected.</p>
+      </header>
+    </div>
+
+    <!--end header section-->
+
+    <div class="container">
+      <form id="survey-form">
+
+        <!--start textboxes-->
+
+        <div class="form-section">
+          <label id="name-label" for="name">Name:</label>
+          <input class="form-field" id="name" placeholder="Enter your Name" required type="text" name="name">
+        </div>
+        <div class="form-section">
+
+          <label id="email-label" for="email">Email:</label>
+          <input class="form-field" id="email" placeholder="Enter your Email" required type="email" name="email">
+        </div>
+        <div class="form-section">
+          <label id="number-label" for="number">Age:</label>
+          <input class="form-field" id="number" type="number" min="18" max="115" name="age" required placeholder="Enter your Age">
+        </div>
+        <!--end textboxes-->
+
+        <!--start dropdown-->
+        <div class="form-section">
+          <label id="dropdown-label" for="position">What is your position about the current COVID-19 Pandemic?</label>
+          <select id="dropdown" name="position" class="form-field" required>
+            <option disabled selected value>Select one</option>
+            <option value="real">It is real</option>
+            <option value="hoax">It is a hoax</option>
+          </select>
+        </div>
+        <!--end dropdown-->
+
+        <!--start checkboxes-->
+
+        <div class="form-section">
+          <p>Select all that apply:</p>
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="facemask" />
+            I use a facemask
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="social distancing" />
+            I practice social distancing
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="wash hands" />
+            I wash my hands frequently
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="hand sanitizer" />
+            I always carry hand sanitizer with me
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="avoid gatherings" />
+            I avoid group gatherings
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="minimun required" />
+            I only do the minimun required to get service
+
+          </label>
+
+          <label>
+            <input name="precautions" type="checkbox" class="checkbox-field" value="none" />
+            None of the above
+          </label>
+        </div>
+        <!--end checkboxes-->
+
+        <!--start radio buttons-->
+
+        <div class="form-section">
+          <p>What is your COVID-19 Vaccination Status? Select one:</p>
+
+          <label>
+            <input name="vaccine-status" type="radio" class="radio-field" value="Fully vaccinated" />
+            Fully vaccinated
+          </label>
+
+          <label>
+            <input name="vaccine-status" type="radio" class="radio-field" value="Partially vaccinated" />
+            Partially vaccinated
+          </label>
+
+          <label>
+            <input name="vaccine-status" type="radio" class="radio-field" value="Not vaccinated but will in the future" />
+            Not vaccinated/will get it in the future
+          </label>
+
+
+          <label>
+            <input name="vaccine-status" type="radio" class="radio-field" value="Not vaccinated" />
+            Not vaccinated/will not get it in the future
+          </label>
+        </div>
+        <!--end radio buttons-->
+
+        <div class="form-section">
+
+          <p>Any comments, suggestions, or additional information you would like to provide?</p>
+          <textarea id="comments" name="comments" class="textarea-field"></textarea>
+        </div>
+
+        <div class="submit-section">
+          <button id="submit" type="submit">SUBMIT</button>
+          <button id="clear" type="reset">RESET</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+</body>
+</html>

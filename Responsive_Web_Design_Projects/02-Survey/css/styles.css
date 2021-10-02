@@ -1,0 +1,127 @@
+/**color pallete used : https://colorhunt.co/palette/2f5d625e8b7ea7c4bcdfeeea**/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #A7C4BC;
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, .5),
+      rgba(0, 0, 0, .2) 40%,
+      rgba(0, 0, 0, 0));
+  color: #FFFFFF;
+  font-family: 'Urbanist', sans-serif;
+  width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+
+}
+
+header {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+main {
+  background-color: #2F5D62;
+}
+
+label {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+/**reference for buttons desing from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button **/
+button{
+    border: 0;
+    line-height: 2.5;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 8px;
+    background-color:#A7C4BC;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width: 25%;
+}
+
+button:hover {
+    background-color:  #5E8B7E;
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.container {
+  margin: 20px 40px;
+}
+
+.form-section {
+  margin: 20px 0;
+}
+
+.form-field, .textarea-field {
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 200;
+  padding: 5px 5px;
+  width: 100%;
+}
+
+.submit-section {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: block;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+#description {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 360px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width:600px) {
+  body {
+    width: 480px;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  body {
+    width: 580px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
