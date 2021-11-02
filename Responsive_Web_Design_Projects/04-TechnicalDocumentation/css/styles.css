@@ -1,0 +1,128 @@
+/* reference: https://devpractical.com/display-html-tags-as-plain-text/ */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF;
+}
+
+header {
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section img{
+  max-width: 100%;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.main-section p {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.main-section li{
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 2.125rem;
+}
+
+.page-container{
+  display: flex;
+  align-content: flex-start;
+}
+
+.code-box{
+  display: block;
+  background-color: #e0e0e0;
+  padding: 0.625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+#main-doc{
+  display: flex;
+  flex-direction: column;
+  position: abosulte;
+  max-width: 900px;
+  margin-left: 320px;
+  margin-right: 20px;
+}
+
+#navbar{
+  background-color: #FFF;
+  border-right: solid;
+  border-color: #545454;
+  display:  flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 280px;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+#navbar li{
+  border-top: 1px solid #545454;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px ;
+  text-decoration: none;
+  cursor: pointer;
+  color: #545454;
+  font-size: 1.5em;
+}
+
+#navbar header{
+  margin-left: 1.25rem;
+}
+
+
+
+@media (max-width: 600px) {
+
+  html {
+    font-size: 12px;
+  }
+  header {
+    font-size: 1.25rem;
+  }
+
+  #navbar a {
+
+    font-size: 1.25rem;
+  }
+ #navbar {
+   max-width: 110px;
+ }
+ #navbar header{
+   margin-left: 0.42rem;
+ }
+ #main-doc{
+   max-width: 250px;
+   margin-left: 120px;
+ }
+ .code-box{
+   font-size: 0.833rem;
+ }
+}
